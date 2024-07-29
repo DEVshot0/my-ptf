@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-ptf/static/css/main.10a5ec86.css",
+    "main.css": "/my-ptf/static/css/main.7d280cdf.css",
     "main.js": "/my-ptf/static/js/main.eddad8a6.js",
     "static/js/453.fc174f3e.chunk.js": "/my-ptf/static/js/453.fc174f3e.chunk.js",
     "static/media/imagem3.webp": "/my-ptf/static/media/imagem3.bde73f3970b25bbff89f.webp",
@@ -13,12 +13,12 @@
     "static/media/imagem4.webp": "/my-ptf/static/media/imagem4.ab9b8c3cf6fe7279c327.webp",
     "static/media/imagem0.webp": "/my-ptf/static/media/imagem0.9798473c37e02ed9b92c.webp",
     "index.html": "/my-ptf/index.html",
-    "main.10a5ec86.css.map": "/my-ptf/static/css/main.10a5ec86.css.map",
+    "main.7d280cdf.css.map": "/my-ptf/static/css/main.7d280cdf.css.map",
     "main.eddad8a6.js.map": "/my-ptf/static/js/main.eddad8a6.js.map",
     "453.fc174f3e.chunk.js.map": "/my-ptf/static/js/453.fc174f3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10a5ec86.css",
+    "static/css/main.7d280cdf.css",
     "static/js/main.eddad8a6.js"
   ]
 }
