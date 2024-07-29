@@ -16,7 +16,7 @@
 }
 
 .line.night-mode {
-  background-color: #00FF00; 
+  background-color: #00FF00; /* Verde no modo noturno */
 }
 
 .ball-container {
@@ -36,20 +36,17 @@
 }
 
 .ball.night-mode {
-  background-color: #00FF00; 
-}
-
-.text, .text2 {
-  position: absolute;
-  font-size: 14px;
-  color: black;
-  display: flex;
-  align-items: center;
+  background-color: #00FF00; /* Verde no modo noturno */
 }
 
 .text {
+  position: absolute;
+  font-size: 14px;
   margin-top: -50px;
   max-width: 60vh;
+  color: black;
+  display: flex;
+  align-items: center;
 }
 
 .text.left {
@@ -63,7 +60,12 @@
 }
 
 .text2 {
+  position: absolute;
+  font-size: 14px;
   margin-top: 0vh;
+  color: black;
+  display: flex;
+  align-items: center;
 }
 
 .text2.left {
@@ -83,7 +85,7 @@
 }
 
 .year.night-mode {
-  color: #00FF00; 
+  color: #00FF00; /* Verde no modo noturno */
 }
 
 .icon-image {
@@ -109,23 +111,27 @@
     transform: translateX(0);
     margin-top: -2vh;
   }
-  .text, .text2 {
+  .text {
     left: 20%;
     transform: translateX(0);
     flex-direction: column-reverse; 
     align-items: flex-start;
     margin-top: -2vh;
   }
-  .text.left, .text.right, .text2.left, .text2.right {
+  .text.left, .text.right {
+    left: 20%;
     max-width: 60%;
     transform: translateX(0);
+  }
+  .text2 {
+    display: none;
   }
   .icon-image {
     display: none;
   }
   .year {
     display: block;
-    margin-top: 10px; 
+    margin-top: 10px; /* Espaçamento entre o texto e o ano */
   }
 }
 
@@ -139,19 +145,24 @@
     transform: translateX(0);
     margin-top: -2vh;
   }
-  .text, .text2 {
+  .text {
     left: 20%;
     transform: translateX(0);
   }
-  .text.left, .text.right {
-    max-width: 60%;
+  .text2 {
+    display: none;
   }
-  .icon-image {
+  .text.left, .text.right {
+    left: 20%;
+    max-width: 60%;
+    transform: translateX(0);;
+  }
+  .text2.left, .text2.right {
     display: none;
   }
   .year {
     display: block;
-    margin-top: 10px; 
+    margin-top: 10px; /* Espaçamento entre o texto e o ano */
   }
 }
 
@@ -171,7 +182,6 @@
     max-width: 30%;
   }
 }
-
 @media (min-width: 1600px) and (max-width: 1920px) {
   .line {
     left: 50%;
