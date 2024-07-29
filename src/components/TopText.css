@@ -1,0 +1,19 @@
+.top-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    height: auto;
+    width: 60%;
+    margin: 80px auto 0;
+  }
+  
+  @media (max-width: 768px) {
+    .top-text {
+      width: 90%;
+      margin-top: 13vh;
+    }
+  }
+  
