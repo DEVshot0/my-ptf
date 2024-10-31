@@ -1,0 +1,109 @@
+.power-meter-list {
+  flex: 1;
+}
+
+.power-meter {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  flex: 1 1 calc(22.5% - 20px); 
+  max-width: calc(22.5% - 20px); 
+  height: 150px; 
+}
+
+.power-meter.night-mode {
+  background-color: #333;
+  border: 1px solid #00FF00;
+  color: #00FF00;
+}
+
+.meter {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #e0e0e0;
+  transition: background-color 0.5s;
+}
+
+.square.filled {
+  background-color: #000000;
+}
+
+.square.blinking {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { background-color: #000000; }
+  50% { background-color: #e0e0e0; }
+  100% { background-color: #000000; }
+}
+
+.square.night-mode {
+  background-color: #333;
+  border: 1px solid #00FF00;
+}
+
+.square.filled.night-mode {
+  background-color: #00FF00;
+}
+
+.square.blinking.night-mode {
+  animation: blink-night 1s infinite;
+}
+
+@keyframes blink-night {
+  0% { background-color: #00FF00; }
+  50% { background-color: #333; }
+  100% { background-color: #00FF00; }
+}
+
+.power-meter-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+@media (max-width: 450px) {
+  .power-meter {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+  .power-meter-list {
+    margin-top: 20vh;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .power-meter {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .power-meter-list {
+    margin-top: 10vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .power-meter {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+  .power-meter-list {
+    margin-top: 10vh;
+  }
+}
